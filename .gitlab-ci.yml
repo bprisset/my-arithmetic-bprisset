@@ -1,0 +1,21 @@
+default:
+  image: python:3.12
+
+stages:
+  - test
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+
+unit-tests:
+  stage: test
+  before_script:
+    - python -m pip install --upgrade pip
+    - pip install hatch
+  script:
+    - hatch test --cover
+  coverage: '/TOTAL.*\s+(\d+%)$/'
