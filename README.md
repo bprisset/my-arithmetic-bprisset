@@ -2,6 +2,7 @@
 
 [![PyPI - Version](https://img.shields.io/pypi/v/my-arithmetic-bprisset.svg)](https://pypi.org/project/my-arithmetic-bprisset)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/my-arithmetic-bprisset.svg)](https://pypi.org/project/my-arithmetic-bprisset)
+![coverage](https://gitlab.univ-lr.fr/bprisset/my-arithmetic-bprisset/badges/main/coverage.svg)
 
 -----
 
