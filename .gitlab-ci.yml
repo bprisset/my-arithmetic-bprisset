@@ -10,7 +10,7 @@ stages:
 
 variables:
   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
-  GIT_DEPTH: 0 # Récupère tous les tags et l'historique Git pour hatch-vcs
+  GIT_DEPTH: 0
   USER: "bprisset"
 
 cache:
