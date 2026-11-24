@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Unit Tests & Coverage
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   test:
-    name: Run Unit Tests
+    name: Run Unit Tests & Coverage
     runs-on: ubuntu-latest
 
     steps:
@@ -26,5 +26,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install hatch
 
-      - name: Run tests with coverage
-        run: hatch test --cover
+      - name: Run tests with XML coverage
+        run: hatch test --cover-xml --cover-xml-output coverage.xml
+
+      - name: Upload coverage to Coveralls
+        uses: coverallsapp/github-action@v2
+        continue-on-error: true
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          file: coverage.xml
+          format: cobertura
