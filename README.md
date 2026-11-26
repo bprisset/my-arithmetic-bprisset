@@ -4,7 +4,7 @@
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/my-arithmetic-bprisset.svg)](https://pypi.org/project/my-arithmetic-bprisset)
 ![coverage](https://gitlab.univ-lr.fr/bprisset/my-arithmetic-bprisset/badges/main/coverage.svg)
 
------
+---
 
 ## Table of Contents
 
@@ -20,3 +20,11 @@ pip install my-arithmetic-bprisset
 ## License
 
 `my-arithmetic-bprisset` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+## Documentation
+
+Documentation is available on [Read The Docs](https://my-arithmetic-bprisset.readthedocs.io/en/latest/)
+
+## Coverage
+
+Test coverage is available on [Coveralls](https://coveralls.io/github/bprisset/my-arithmetic-bprisset)
